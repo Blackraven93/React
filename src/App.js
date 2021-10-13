@@ -1,6 +1,7 @@
 import MyComponent from "./components/MyComponent";
 import Counter from "./components/Counter";
 import EventPractice from "./components/EventPractice";
+import Inputs from "./components/Inputs";
 import PropTypes from "prop-types";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <MyComponent children="React" />
       <Counter></Counter>
       <EventPractice></EventPractice>
+      <Inputs />
     </>
   );
 }
