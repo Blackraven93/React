@@ -10,7 +10,7 @@ class MyComponent extends Component {
   };
 
   render() {
-    const { name, favoriteNumber, children } = this.props;
+    const { name, children } = this.props;
 
     return (
       <div>
