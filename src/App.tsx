@@ -1,12 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Container from './components/Container';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world!</h1>
-      <h2>My name's raven</h2>
-    </div>
+    <Container>
+      <div>this</div>
+    </Container>
   );
 }
 
