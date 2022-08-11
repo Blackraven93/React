@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@babel/eslint-parser", "virtual:515c8382ea6b24ae9b836e71ab72a6ca6c9929f37a68c79e90d49935a75d97ea1c9cc89e073ab3b63d91e8c9c881679f0a4d3e1a25029010d0052894350d97f6#npm:7.18.9"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:515c8382ea6b24ae9b836e71ab72a6ca6c9929f37a68c79e90d49935a75d97ea1c9cc89e073ab3b63d91e8c9c881679f0a4d3e1a25029010d0052894350d97f6#npm:13.3.0"],\
             ["@testing-library/user-event", "virtual:515c8382ea6b24ae9b836e71ab72a6ca6c9929f37a68c79e90d49935a75d97ea1c9cc89e073ab3b63d91e8c9c881679f0a4d3e1a25029010d0052894350d97f6#npm:13.5.0"],\
@@ -219,6 +220,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@babel/eslint-parser", "virtual:4d4b42e405a5ebe597790cf9c477d043d9e636e4e35eb9be914cf4da68f714b7404900f32f148f48b585cbee605aa33acff23d14fd5bd7572722556916b07778#npm:7.18.9"],\
             ["@babel/core", "npm:7.18.10"],\
+            ["@types/babel__core", null],\
+            ["@types/eslint", null],\
+            ["eslint", "npm:8.21.0"],\
+            ["eslint-scope", "npm:5.1.1"],\
+            ["eslint-visitor-keys", "npm:2.1.0"],\
+            ["semver", "npm:6.3.0"]\
+          ],\
+          "packagePeers": [\
+            "@babel/core",\
+            "@types/babel__core",\
+            "@types/eslint",\
+            "eslint"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:515c8382ea6b24ae9b836e71ab72a6ca6c9929f37a68c79e90d49935a75d97ea1c9cc89e073ab3b63d91e8c9c881679f0a4d3e1a25029010d0052894350d97f6#npm:7.18.9", {\
+          "packageLocation": "./.yarn/__virtual__/@babel-eslint-parser-virtual-0bbc340bb9/0/cache/@babel-eslint-parser-npm-7.18.9-02e32da92a-ddbe0f9425.zip/node_modules/@babel/eslint-parser/",\
+          "packageDependencies": [\
+            ["@babel/eslint-parser", "virtual:515c8382ea6b24ae9b836e71ab72a6ca6c9929f37a68c79e90d49935a75d97ea1c9cc89e073ab3b63d91e8c9c881679f0a4d3e1a25029010d0052894350d97f6#npm:7.18.9"],\
+            ["@babel/core", null],\
             ["@types/babel__core", null],\
             ["@types/eslint", null],\
             ["eslint", "npm:8.21.0"],\
@@ -17414,6 +17435,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:.", {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@babel/eslint-parser", "virtual:515c8382ea6b24ae9b836e71ab72a6ca6c9929f37a68c79e90d49935a75d97ea1c9cc89e073ab3b63d91e8c9c881679f0a4d3e1a25029010d0052894350d97f6#npm:7.18.9"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:515c8382ea6b24ae9b836e71ab72a6ca6c9929f37a68c79e90d49935a75d97ea1c9cc89e073ab3b63d91e8c9c881679f0a4d3e1a25029010d0052894350d97f6#npm:13.3.0"],\
             ["@testing-library/user-event", "virtual:515c8382ea6b24ae9b836e71ab72a6ca6c9929f37a68c79e90d49935a75d97ea1c9cc89e073ab3b63d91e8c9c881679f0a4d3e1a25029010d0052894350d97f6#npm:13.5.0"],\
