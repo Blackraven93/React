@@ -13,12 +13,10 @@ function Nav() {
       }
     });
 
-    //FIXME:LintError:  @typescript-eslint/no-empty-function
+    // FIXME:LintError:  @typescript-eslint/no-empty-function
     // return () => {
     //   window.removeEventListener('scroll', () => {})
     // }
-
-    
   }, []);
 
   return (
