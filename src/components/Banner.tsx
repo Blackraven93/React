@@ -8,9 +8,10 @@ function Banner() {
     name: string;
     original_name?: string;
     overview?: string;
+    backdrop_path: string;
   }
 
-  const [movie, setMovie] = useState<IMovie | Array<null>>([]);
+  const [movie, setMovie] = useState<IMovie>();
   const fetchData = async () => {
     const request = await axios.get(requests.fetchNowPlaying);
     console.log(request);
