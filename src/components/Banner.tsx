@@ -8,7 +8,7 @@ function Banner() {
     title: string;
     name: string;
     original_name?: string;
-    overview?: string;
+    overview: string;
     backdrop_path: string;
   }
 
@@ -33,6 +33,12 @@ function Banner() {
     fetchData();
   }, []);
 
+  const truncate = (movieDetail: string, limitNumber: number): string => {
+    return movieDetail?.length > limitNumber
+      ? `${movieDetail.substring(0, limitNumber - 1)}...`
+      : movieDetail;
+  };
+
   return (
     <header
       className="banner"
@@ -54,7 +60,9 @@ function Banner() {
             <div className="space" /> More Information
           </button>
         </div>
-        <h1 className="banner__description">{movie?.overview || ''}</h1>
+        <h1 className="banner__description">
+          {truncate(movie?.overview || '', 100)}
+        </h1>
       </div>
       <div className="banner--fadeBottom" />
     </header>
