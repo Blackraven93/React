@@ -1,7 +1,14 @@
 import React from 'react';
+import Nav from './components/Nav';
+import Banner from './components/Banner';
 
 function App() {
-  return <h1>Init</h1>;
+  return (
+    <div className="App">
+      <Nav />
+      <Banner />
+    </div>
+  );
 }
 
 export default App;
