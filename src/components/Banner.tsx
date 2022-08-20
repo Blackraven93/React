@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import styled from 'styled-components';
 import axios from '../api/axios';
 import requests from '../api/requests';
 import './styles/Banner.css';
@@ -71,13 +72,27 @@ function Banner() {
     );
   } else {
     return (
-      <div>
-        clicked
-      </div>
+      <Container>
+        <HomeContainer>
+          
+        </HomeContainer>
+      </Container>
     )
-  }
-
-  
+  }  
 }
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh
+`
+
+const HomeContainer = styled.div`
+  width: 100%;
+  height: 100%;
+`
 
 export default Banner;
