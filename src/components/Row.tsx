@@ -1,4 +1,5 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect } from "react";
 
 interface IRow {
   title: string;
@@ -8,6 +9,16 @@ interface IRow {
 }
 
 function Row({ title, fetchUrl, isLargeRow, id }: IRow) {
+
+  useEffect(() => {
+    const fetchMovieData = async () => {
+      const request = await axios.get(fetchUrl)
+      
+    }
+    fetchMovieData();
+  }, [])
+  
+
   return (
     <div>
       <div>{title}</div>
