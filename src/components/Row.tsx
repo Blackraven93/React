@@ -47,7 +47,15 @@ function Row({ title, fetchUrl, isLargeRow, id }: IRow) {
           })}
         </div>
         <div className="slider__arrow-right">
-          <span className="arrow">{">"}</span>
+          <span
+            className="arrow"
+            onClick={() => {
+              document.getElementById(id)?.scrollLeft +=
+                window.innerHeight - 80;
+            }}
+          >
+            {">"}
+          </span>
         </div>
       </div>
     </section>
